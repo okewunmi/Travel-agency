@@ -1,0 +1,29 @@
+.navigation{
+ display: flex;
+ color: $color-grey-light-2;
+
+
+ &__links{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: inherit;
+  margin-right:2.5rem;
+  cursor: pointer;
+
+  }
+  
+ &__items{
+  list-style: none;
+  display: inline;
+  padding-bottom: .5rem;
+  transition: all 0.3s;
+  position:relative;
+  z-index:280; 
+
+  &:hover, &:active{
+   border-bottom: 2px solid $color-grey-light-3;
+   color: $color-grey-light-3;
+  }
+ }
+}

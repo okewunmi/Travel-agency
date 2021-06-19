@@ -1,1 +1,55 @@
- -
+.header{
+ background-image: linear-gradient(to top,
+ rgba($color-primary-dark, 0.05),
+ rgba($color-primary, 0.9)), (url(../img/back.jpg));
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position:top;
+ height: 100vh;
+ font-family: $font-primary;
+ position: relative;
+ z-index: 2;
+
+ &-box{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+
+ }
+ &__logo{
+  font-size: 3.2rem;
+  font-weight: normal;
+
+  &-txt{
+   font-size: 1.4rem;
+  }
+ }
+
+ &__text{
+  margin: 10rem 7rem auto 20rem;
+  display: flex;
+  justify-content: space-between;
+ }
+ &__txt{
+  list-style: none;
+
+  &-list{
+   font-size: 5rem;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-weight: 600;
+   display: block;
+   line-height: 1.3;
+  }
+ }
+ &__buttons{
+  display:flex;
+  flex-direction: column;
+  // align-content: center;
+  align-items: center;
+  justify-content: center;
+
+ }
+}
