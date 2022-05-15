@@ -1,55 +1,98 @@
-.header{
- background-image: linear-gradient(to top,
- rgba($color-primary-dark, 0.05),
- rgba($color-primary, 0.9)), (url(../img/back.jpg));
- background-repeat: no-repeat;
- background-size: cover;
- background-position:top;
- height: 100vh;
- font-family: $font-primary;
- position: relative;
- z-index: 2;
-
- &-box{
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-around;
-  justify-items: center;
-  align-items: center;
-
- }
- &__logo{
-  font-size: 3.2rem;
-  font-weight: normal;
-
-  &-txt{
-   font-size: 1.4rem;
-  }
- }
-
- &__text{
-  margin: 10rem 7rem auto 20rem;
-  display: flex;
-  justify-content: space-between;
- }
- &__txt{
-  list-style: none;
-
-  &-list{
-   font-size: 5rem;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   font-weight: 600;
-   display: block;
-   line-height: 1.3;
-  }
- }
- &__buttons{
-  display:flex;
-  flex-direction: column;
-  // align-content: center;
-  align-items: center;
-  justify-content: center;
-
- }
-}
+        .header {
+            background-image: linear-gradient(to top, rgba($color-primary-dark, 0.05), rgba($color-primary, 0.9)), (url(../img/backgroundd.jpg));
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            height: 90vh;
+            font-family: inherit;
+            position: relative;
+            z-index: 2;
+            @media only screen and (max-width: $bp-small) {
+                height: 80vh;
+            }
+            @media only screen and (max-width: $bp-smallest) {
+                height: 80vh;
+            }
+            &-box {
+                padding-top: 2rem;
+                display: flex;
+                justify-content: space-around;
+                justify-items: center;
+                align-items: center;
+                @media only screen and (max-width: $bp-largest) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &__logo {
+                font-size: 3.2rem;
+                font-weight: normal;
+                display: flex;
+                flex-direction: column;
+                @media only screen and (max-width: $bp-largest) {
+                    font-size: 5rem;
+                }
+                &-txt {
+                    font-size: 1.4rem;
+                    margin-top: -1rem;
+                    @media only screen and (max-width: $bp-largest) {
+                        margin-top: -2.5rem;
+                        padding-bottom: .4rem;
+                    }
+                }
+            }
+            &__text {
+                margin: 7.6rem 7rem auto 20rem;
+                display: flex;
+                justify-content: space-between;
+                @media only screen and (max-width: $bp-large) {
+                    margin: 8rem 7.5rem auto 13rem;
+                }
+                @media only screen and (max-width:$bp-medium) {
+                    margin: 8.5rem 7.6rem auto 10rem;
+                }
+                @media only screen and (max-width:$bp-medium-small) {
+                    margin: 8.5rem 7rem auto 8rem;
+                }
+            }
+            &__txt {
+                list-style: none;
+                &-list {
+                    font-size: 5rem;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    font-weight: 500;
+                    display: block;
+                    line-height: 1.4;
+                    @media only screen and (max-width: $bp-large) {
+                        font-size: 4.8rem;
+                    }
+                    @media only screen and (max-width:$bp-medium-small) {
+                        font-size: 4.5rem;
+                    }
+                    @media only screen and (max-width:$bp-small) {
+                        font-size: 4rem;
+                    }
+                    @media only screen and (max-width:$bp-smallest) {
+                        font-size: 3rem;
+                    }
+                    @media only screen and (max-width:$bp-phone-big) {
+                        font-size: 2.5rem;
+                    }
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                // align-content: center;
+                align-items: center;
+                justify-content: center;
+            }
+        }

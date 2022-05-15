@@ -1,14 +1,14 @@
 {
-  "name": "travel-agency",
-  "version": "1.0.0",
-  "description": "travel-agency landing page",
-  "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
-  "author": "afeez",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.14.1"
-  }
+    "name": "travel-agency",
+    "version": "1.0.0",
+    "description": "travel-agency landing page",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    },
+    "author": "afeez",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
 }
