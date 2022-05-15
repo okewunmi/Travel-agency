@@ -1,48 +1,62 @@
-.footer{
- margin: 4rem 0;
- border-top: 3px solid $color-primary-dark;
- color: $color-grey-dark-1;
-
- &__nav{
-margin: 5rem auto;
-display: flex;
-justify-content: space-evenly;
-
-&--list{
- display: flex;
- flex-direction: column;
-
- p{
-  width: 25rem;
-  font-size: 1.5rem;
-  padding-top: 1rem;
- }
- h2{
-  font-size: 2.5rem;
- }
- input{
-  margin-top: 1.5rem;
-  padding: 1.2rem;
-  width: 27rem;
-  outline: 2px solid $color-primary;
-  border: none;
- 
-  &:focus{
-   outline: 2px solid green;
-   border-radius: 5px;
-   transition:all .3s ;
-  }
- }
-}
-&--items{
- list-style: none;
- font-size: 1.6rem;
- padding: 1rem 2rem;
- color: $color-grey-dark-2;
-}
- }
- &__form--head{
-  margin-top: 7rem;
- }
-
+.footer {
+    margin: 4rem 0;
+    border-top: 3px solid $color-primary-dark;
+    color: $color-grey-dark-1;
+    font-family: inherit;
+    &__nav {
+        margin: 5rem auto;
+        display: flex;
+        justify-content: space-evenly;
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 0 2remm;
+            // align-items: center;
+        }
+        &--list {
+            display: flex;
+            flex-direction: column;
+            p {
+                width: 25rem;
+                font-size: 1.5rem;
+                padding-top: 1rem;
+                @media only screen and (max-width: $bp-medium) {
+                    font-size: 1.4rem;
+                }
+                @media only screen and (max-width: $bp-small) {
+                    width: 95%;
+                }
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            input {
+                margin-top: 1.5rem;
+                padding: 1.2rem;
+                width: 27rem;
+                outline: 2px solid $color-primary;
+                border: none;
+                &:focus {
+                    outline: 2px solid green;
+                    border-radius: 5px;
+                    transition: all .3s;
+                }
+            }
+        }
+        &--items {
+            list-style: none;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            color: $color-grey-dark-2;
+        }
+    }
+    &__form--head {
+        margin-top: 7rem;
+    }
+    &__list {
+        @media only screen and (max-width: $bp-small) {
+            display: flex;
+            // justify-content: space-between;
+            width: 95%;
+        }
+    }
 }
